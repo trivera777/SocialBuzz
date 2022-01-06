@@ -1,0 +1,29 @@
+@import "../global.scss";
+h1 {
+     @include  mobile{
+        font-size: 20px;
+    }
+}
+h2 {
+    color: #252C33;
+
+}
+.createContainer {
+    width: 90%;
+    height: 200px;
+    display: flex;
+    margin-left: 40px;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 10px;
+
+    @include mobile {
+        margin: 20px;
+    }
+
+    .button {
+        background-color: #F6C90E;
+        border-color: #F6C90E;
+    }
+}

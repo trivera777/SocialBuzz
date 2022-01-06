@@ -1,6 +1,13 @@
-.welcome {
-    padding: 5px 5px;
-    margin-right: 25px;
-    align-items: center;
-    justify-content: center;
+@import "../global.scss";
+
+.navbar {
+    background-color: #252C33;
+
+    h1 {
+        margin-left: 0;
+    }
+
+    .welcome {
+        color: #EEEEEE;
+    }
 }

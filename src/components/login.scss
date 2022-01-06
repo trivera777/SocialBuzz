@@ -1,16 +1,22 @@
 @import "~bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import "../global.scss";
+
 
 body {
     background-color: #252C33;
+    font-family: 'Poiret One', cursive;
 }
 
 h1,
 h2 {
     color: #EEEEEE;
+    font-family: 'Poiret One', cursive;
 }
 .form {
-    color: #EEEEEE;
-    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 

@@ -15,7 +15,7 @@ function Login({ setUser }) {
       <h1>Social Media App</h1>
       <div className="form">
         <Form onSubmit={handleSubmit}>
-        <h2>Login</h2>
+        <h2 style={{ color: "#EEEEEE" }}>Login</h2>
           <Form.Group className="mb-3">
             <Form.Label style={{color: "#3A4750 "}}>Username</Form.Label>
             <Form.Control

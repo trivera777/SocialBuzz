@@ -1,40 +1,44 @@
 import React from "react";
-import { PostContext } from '../App'
-import Button from 'react-bootstrap/Button';
+import "./createpost.scss";
+import { PostContext } from "../App";
+import { Button, Form } from "react-bootstrap";
 
-
-function CreatePost({ user  }) {
-  const { dispatch } = React.useContext(PostContext)
+function CreatePost({ user }) {
+  const { dispatch } = React.useContext(PostContext);
   const [content, setContent] = React.useState("");
   const [image, setImage] = React.useState(null);
   const imageInputRef = React.useRef();
 
-  function handleSubmit(event){
+  function handleSubmit(event) {
     event.preventDefault();
     const post = { content, image, user, id: Date.now() };
     dispatch({ type: "ADD_POST", payload: { post } });
     setContent("");
     imageInputRef.current.value = "";
-  };
+  }
 
   return (
-    <div>
-      <h1>Create New Post</h1>
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          placeholder="add post content"
-          onChange={event => setContent(event.target.value)}
-          value={content}
-        />
-        <input
+    <div className="createContainer">
+      <Form onSubmit={handleSubmit}>
+        <Form.Label>
+          <h2>Create New Post</h2>
+        </Form.Label>
+        <Form.Control
           type="file"
-          onChange={event => setImage(event.target.files[0])}
+          onChange={(event) => setImage(event.target.files[0])}
           ref={imageInputRef}
         />
+        <Form.Control
+          type="text"
+          placeholder="add post content"
+          onChange={(event) => setContent(event.target.value)}
+          value={content}
+        />
 
-        <Button variant="outline-success" type="submit">Submit Post</Button>
-      </form>
+        <Button className="button" type="submit">
+          Submit Post
+        </Button>
+      </Form>
     </div>
   );
 }
