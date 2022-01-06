@@ -1,1 +1,21 @@
 @import "~bootstrap/scss/bootstrap";
+
+body {
+    background-color: #252C33;
+}
+
+h1,
+h2 {
+    color: #EEEEEE;
+}
+.form {
+    color: #EEEEEE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .button {
+        background-color: #F6C90E;
+        border-color: #F6C90E;
+    }
+}

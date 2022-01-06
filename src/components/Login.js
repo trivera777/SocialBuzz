@@ -12,20 +12,22 @@ function Login({ setUser }) {
   }
   return (
     <div>
-      <Header />
-
-      <Form onSubmit={handleSubmit}>
-        <Form.Group className="mb-3">
-          <Form.Label>Username</Form.Label>
-          <Form.Control
-            onChange={(event) => setUsername(event.target.value)}
-            placeholder="Enter username"
-          />
-        </Form.Group>
-        <Button rounded color="success" type="submit">
-          Submit
-        </Button>
-      </Form>
+      <h1>Social Media App</h1>
+      <div className="form">
+        <Form onSubmit={handleSubmit}>
+        <h2>Login</h2>
+          <Form.Group className="mb-3">
+            <Form.Label style={{color: "#3A4750 "}}>Username</Form.Label>
+            <Form.Control
+              onChange={(event) => setUsername(event.target.value)}
+              placeholder="Enter username"
+            />
+          </Form.Group>
+          <Button className="button" rounded type="submit">
+            Submit
+          </Button>
+        </Form>
+      </div>
     </div>
   );
 }
