@@ -1,5 +1,7 @@
 import React from "react";
 import { PostContext } from '../App'
+import Button from 'react-bootstrap/Button';
+
 
 function CreatePost({ user  }) {
   const { dispatch } = React.useContext(PostContext)
@@ -30,7 +32,8 @@ function CreatePost({ user  }) {
           onChange={event => setImage(event.target.files[0])}
           ref={imageInputRef}
         />
-        <button type="submit">Submit Post</button>
+
+        <Button variant="outline-success" type="submit">Submit Post</Button>
       </form>
     </div>
   );
