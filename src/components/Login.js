@@ -1,7 +1,7 @@
 import React from "react";
 import "./login.scss";
-import Header from "./Header";
-import { Button, Container, Navbar, Form } from "react-bootstrap";
+import { Button, Form } from "react-bootstrap";
+import Divider from '@mui/material/Divider'
 
 function Login({ setUser }) {
   const [username, setUsername] = React.useState("");
@@ -13,6 +13,7 @@ function Login({ setUser }) {
   return (
     <div>
       <h1>Social Media App</h1>
+      <Divider style={{ color: "white" }}/>
       <div className="form">
         <Form onSubmit={handleSubmit}>
           <h2 style={{ color: "#EEEEEE" }}>Login</h2>

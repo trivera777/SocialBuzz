@@ -1,9 +1,5 @@
 @import "../global.scss";
-h1 {
-     @include  mobile{
-        font-size: 20px;
-    }
-}
+
 h2 {
     color: #252C33;
 
