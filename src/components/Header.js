@@ -10,7 +10,7 @@ function Header({ user, setUser }) {
         <Navbar.Text className="welcome">Welcome, {user}!</Navbar.Text>
       </Container>
       <Button variant="danger" onClick={() => setUser("")}>
-        logout
+        Logout
       </Button>
     </Navbar>
   );

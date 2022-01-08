@@ -1,6 +1,6 @@
 import React from "react";
 import './post.scss'
-import { Card } from "react-bootstrap";
+import { Card, Button } from "react-bootstrap";
 import { UserContext, PostContext } from "../App";
 
 function Post({ image, content, user, id }) {
@@ -29,7 +29,7 @@ function Post({ image, content, user, id }) {
 
         <div className="username" style={{ color: isCurrentUser && "green" }}>{user}</div>
         <div>
-          {isCurrentUser && <button onClick={handleDeletePost}>Delete</button>}
+          {isCurrentUser && <Button variant="danger" onClick={handleDeletePost}>Delete</Button>}
         </div>
         </Card.Body>
       </Card>
