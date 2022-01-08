@@ -13,7 +13,7 @@ export const PostContext = React.createContext({
 function App() {
   const initialPostState = React.useContext(PostContext);
   const [state, dispatch] = React.useReducer(postReducer, initialPostState);
-  const [user, setUser] = React.useState("tif");
+  const [user, setUser] = React.useState("");
 
   React.useEffect(() => {
     document.title = user ? `${user}'s Feed` : "Please login.";
