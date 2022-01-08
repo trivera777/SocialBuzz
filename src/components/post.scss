@@ -1,6 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-.username {
-    font-family: 'Bebas Neue', cursive;
-    font-size: 15px;
-    letter-spacing: 1px;
+
+.cardContainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+
+    .username {
+        font-family: 'Bebas Neue', cursive;
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
 }
