@@ -8,9 +8,11 @@ User is able to create a username and login.
 ![Socia Media App Screenshot](./public/img/login.png)
 
 User is able to upload an image as well as add post content.
+
 ![Socia Media App Screenshot](./public/img/newpost.png)
 
 User's post has the option to delete, only when signed in and will display the username who created the content.
+
 ![Socia Media App Screenshot](./public/img/content.png)
 
 # Link
