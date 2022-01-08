@@ -1,4 +1,5 @@
 import React from "react";
+import { Card } from "react-bootstrap";
 import { UserContext, PostContext } from "../App";
 
 function Post({ image, content, user, id }) {
@@ -11,20 +12,27 @@ function Post({ image, content, user, id }) {
   }
 
   return (
-    <>
-      {image && (
-        <img
-          style={{ height: 100, width: 200, objectFit: "cover" }}
-          src={URL.createObjectURL(image)}
-          alt="Post cover"
-        />
-      )}
-      <p>{content}</p>
-      <div style={{ color: isCurrentUser && "green" }}>{user}</div>
-      <div>
-        {isCurrentUser && <button onClick={handleDeletePost}>Delete</button>}
-      </div>
-    </>
+    <div className="cardContainer">
+      <Card style={{ width: '30rem' }}>
+        {image && (
+          <Card.Img
+            src={URL.createObjectURL(image)}
+            alt="Post cover"
+          />
+        )}
+        <Card.Body>
+          <Card.Title>
+        <p>{content}</p>
+
+          </Card.Title>
+
+        <div style={{ color: isCurrentUser && "green" }}>{user}</div>
+        <div>
+          {isCurrentUser && <button onClick={handleDeletePost}>Delete</button>}
+        </div>
+        </Card.Body>
+      </Card>
+    </div>
   );
 }
 
