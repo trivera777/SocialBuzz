@@ -6,7 +6,7 @@ function Header({ user, setUser }) {
   return (
     <Navbar className="navbar">
       <Container>
-        <h1>Social Media App</h1>
+        <h1>Social Buzz</h1>
         <Navbar.Text className="welcome">Welcome, {user}!</Navbar.Text>
       </Container>
       <Button variant="danger" onClick={() => setUser("")}>

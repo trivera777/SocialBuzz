@@ -1,7 +1,7 @@
 import React from "react";
 import "./login.scss";
 import { Button, Form } from "react-bootstrap";
-import Divider from '@mui/material/Divider'
+import Divider from "@mui/material/Divider";
 
 function Login({ setUser }) {
   const [username, setUsername] = React.useState("");
@@ -13,13 +13,14 @@ function Login({ setUser }) {
   return (
     <div>
       <h1>Social Media App</h1>
-      <Divider style={{ color: "white" }}/>
+      <Divider style={{ color: "white" }} />
       <div className="form">
         <Form onSubmit={handleSubmit}>
           <h2 style={{ color: "#EEEEEE" }}>Login</h2>
           <Form.Group className="mb-3">
             <Form.Label style={{ color: "#3A4750 " }}>Username</Form.Label>
             <Form.Control
+            style={{width: '85%'}}
               onChange={(event) => setUsername(event.target.value)}
               placeholder="Enter username"
             />
