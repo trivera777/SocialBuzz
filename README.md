@@ -5,7 +5,7 @@ This is a mock social meadi application where user can login with a username and
 # Preview 
 User is able to create a username and login.
 
-![Socia Buzz Screenshot](./public/img/login.png)
+![Socia Buzz Screenshot](./public/img/socialbuzz.png)
 
 User is able to upload an image as well as add post content.
 
