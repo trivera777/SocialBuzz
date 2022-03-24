@@ -12,7 +12,7 @@ function Login({ setUser }) {
   }
   return (
     <div>
-      <h1>Social Media App</h1>
+      <h1>Social Buzz</h1>
       <Divider style={{ color: "white" }} />
       <div className="form">
         <Form onSubmit={handleSubmit}>
