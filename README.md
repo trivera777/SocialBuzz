@@ -11,9 +11,9 @@ User is able to upload an image as well as add post content.
 
 ![Socia Buzz Screenshot](./public/img/newpost.png)
 
-User's post has the option to delete, only when signed in and will display the content creator's name.
+User has the option to delete their own post as long as they are logged in.
 
 ![Socia Buzz Screenshot](./public/img/content.png)
 
 # Link
-[Click here to login](https://tr-socialmediaapp.herokuapp.com/)
+[Click here to start buzzing!](https://tr-socialmediaapp.herokuapp.com/)
