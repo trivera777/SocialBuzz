@@ -3,11 +3,14 @@ import "./login.scss";
 import { Button, Form } from "react-bootstrap";
 import Divider from "@mui/material/Divider";
 
+//object destructuring
 function Login({ setUser }) {
   const [username, setUsername] = React.useState("");
 
+  //prevents default behavior - page does not refresh when form is submitted
   function handleSubmit(event) {
     event.preventDefault();
+    //passes upated username vaule to setUser prop
     setUser(username);
   }
   return (
