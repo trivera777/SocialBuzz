@@ -15,6 +15,7 @@ function App() {
   const [state, dispatch] = React.useReducer(postReducer, initialPostState);
   const [user, setUser] = React.useState("");
 
+  //sets title to users name
   React.useEffect(() => {
     document.title = user ? `${user}'s Feed` : "Please login.";
   }, [user]);
