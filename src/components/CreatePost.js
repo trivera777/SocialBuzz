@@ -25,11 +25,13 @@ function CreatePost({ user }) {
         </Form.Label>
         <Form.Control
           type="file"
+          class="file"
           onChange={(event) => setImage(event.target.files[0])}
           ref={imageInputRef}
         />
         <Form.Control
           type="text"
+          class="text"
           placeholder="add post content"
           onChange={(event) => setContent(event.target.value)}
           value={content}
