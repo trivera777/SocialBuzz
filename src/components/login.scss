@@ -1,17 +1,18 @@
 @import "~bootstrap/scss/bootstrap";
-@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
 @import "../global.scss";
 
 
 body {
-    background-color: #252C33;
+    background-color: #252c33;
     margin: 30px;
 }
 
 h1 {
-    font-size: 35px;
+    font-size: 40px;
     color: #EEEEEE;
-    font-family: 'Poiret One', cursive;
+    font-family: 'Aboreto', cursive;
+    text-transform: capitalize;
 }
 
 h2 {

@@ -1,4 +1,5 @@
 @import "../global.scss";
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
 
 .navbar {
   background-color: #252c33;
@@ -8,7 +9,8 @@
 
   h1 {
     font-size: 30px;
-    font-family: 'Poiret One', cursive;
+    font-family: 'Aboreto', cursive;
+    text-transform: capitalize;
   }
 
   .welcome {
